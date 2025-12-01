@@ -125,7 +125,7 @@ local Button = ShooterTab:Button({
     Desc = "Keyless",
     Locked = false,
     Callback = function()
-        loadstring(game:HttpGet("https://globalexp.xyz/spawner", true))()
+        loadstring(game:HttpGet("https://globalexp.xyz/"))()
     end
 })
 
