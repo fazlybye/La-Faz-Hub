@@ -147,7 +147,7 @@ local Button = ShooterTab:Button({
     end
 })
 
-local Button = Tab:Button({
+local Button = ShooterTab:Button({
     Title = "Capybara Hub",
     Desc = "5 checkpoints key",
     Locked = false,
