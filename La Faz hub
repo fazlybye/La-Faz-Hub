@@ -1,0 +1,371 @@
+local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
+
+local Window = WindUI:CreateWindow({
+    Title = "La Faz Hub",
+    Icon = "dumbbell", -- lucide icon
+    Author = "by Fazlybye/Fazlyfazbear",
+    Folder = "La faz hub",
+    
+    -- ↓ This all is Optional. You can remove it.
+    Size = UDim2.fromOffset(580, 460),
+    MinSize = Vector2.new(560, 350),
+    MaxSize = Vector2.new(850, 560),
+    Transparent = true,
+    Theme = "Dark",
+    Resizable = true,
+    SideBarWidth = 200,
+    BackgroundImageTransparency = 0.42,
+    HideSearchBar = true,
+    ScrollBarEnabled = false,
+    
+     -- ↓ Optional. You can remove it.
+    User = {
+        Enabled = true,
+        Anonymous = true,
+        Callback = function()
+            print("clicked")
+        end,
+    },
+    
+    --       remove this all, 
+    -- !  ↓  if you DON'T need the key system
+    KeySystem = { 
+        -- ↓ Optional. You can remove it.
+        Key = { "Fuckyou", "fuckyou", " fuck you","Fuck you"},
+        
+        Note = "Example Key System.",
+        
+        -- ↓ Optional. You can remove it.
+        URL = "YOUR LINK TO GET KEY (Discord, Linkvertise, Pastebin, etc.)",
+        
+        -- ↓ Optional. You can remove it.
+        SaveKey = true, -- automatically save and load the key.
+        
+        -- ↓ Optional. You can remove it.
+        -- API = {} ← Services. Read about it below ↓
+    },
+})
+
+local MainTab = Window:Tab({
+    Title = "Sport",
+    Icon = "volleyball", -- optional
+    Locked = false,
+})
+
+local Section = MainTab:Section({ 
+    Title = "Football",
+})
+
+local Button = MainTab:Button({
+    Title = "Pure Soccer",
+    Desc = "Made By Nexveil",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ryte-e/Scripts/refs/heads/main/PureSoccer/PureSoccerexp"))()
+    end
+})
+
+local Button = MainTab:Button({
+    Title = "TRS BETA",
+    Desc = "Made By Nexveil",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ryte-e/Scripts/refs/heads/main/Trs/BETA"))()
+    end
+})
+
+local Button = MainTab:Button({
+    Title = "MPS Futsal",
+    Desc = "Made By Nexveil",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ryte-e/Scripts/refs/heads/main/Mps/Futsal"))()
+    end
+})
+
+local Button = Tab:Button({
+    Title = "Classic Soccer",
+    Desc = "Made By Helixia",
+    Locked = false,
+    Callback = function()
+        -- made by Helixia top 1 tcs script
+loadstring(game:HttpGet("https://raw.githubusercontent.com/wrestonbest/Helixia-2026/refs/heads/main/TCS/free%20v1.lua"))()
+    end
+})
+
+local Section = MainTab:Section({ 
+    Title = "basketball",
+})
+
+local Button = MainTab:Button({
+    Title = "Basketball Legend",
+    Desc = "Made By Eon",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/DLjkqIll/raw"))()
+    end
+})
+
+local Section = MainTab:Section({ 
+    Title = "More Soon",
+})
+
+local ShooterTab = Window:Tab({
+    Title = "Shooter",
+    Icon = "crosshair", -- optional
+    Locked = false,
+})
+
+local Section = ShooterTab:Section({ 
+    Title = "MM2",
+})
+
+local Button = ShooterTab:Button({
+    Title = "globalexp",
+    Desc = "Keyless",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://globalexp.xyz/spawner", true))()
+    end
+})
+
+local Button = ShooterTab:Button({
+    Title = "X Hub",
+    Desc = "keyless",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Mathersg4/MM2/refs/heads/main/Xhub", true))()
+    end
+})
+
+local Button = ShooterTab:Button({
+    Title = "YARHM",
+    Desc = "keyless plus works in MMV",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://yarhm.mhi.im/scr", false))()
+    end
+})
+
+local Section = ShooterTab:Section({ 
+    Title = "Murder vs sheriff duels",
+})
+
+local Button = ShooterTab:Button({
+    Title = "Mist Hub",
+    Desc = "Two Key checkpoints",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/THE-MIST-HUB/OFFICIAL/refs/heads/main/MVSD_FREE"))()
+    end
+})
+
+local Button = ShooterTab:Button({
+    Title = "Ekuve Hub",
+    Desc = "idk if there's a key or not",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ekuve/ekuvehub/main/main.lua"))()
+    end
+})
+
+local Section = ShooterTab:Section({ 
+    Title = "Hitbox,Esp",
+})
+
+local Button = ShooterTab:Button({
+    Title = "Hitbox",
+    Desc = "Made By Minicapy",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/XxWj2B1j"))()
+    end
+})
+
+local Button = ShooterTab:Button({
+    Title = "Hitbox",
+    Desc = "Made By Dark Hub",
+    Locked = false,
+    Callback = function()
+        -- Global variables for the functionality
+_G.HeadSize = 15
+_G.Disabled = false -- Start disabled by default when using a GUI toggle (state is "Off")
+
+-- Create the nametag BillboardGui template (remains the same)
+local NameTagTemplate = Instance.new("BillboardGui")
+NameTagTemplate.Name = "CustomNameTag"
+NameTagTemplate.Size = UDim2.new(4, 0, 1, 0)
+NameTagTemplate.StudsOffset = Vector3.new(0, 2.5, 0)
+NameTagTemplate.AlwaysOnTop = true
+NameTagTemplate.LightInfluence = 0
+
+local NameLabel = Instance.new("TextLabel")
+NameLabel.Name = "PlayerNameLabel"
+NameLabel.Size = UDim2.new(1, 0, 1, 0)
+NameLabel.BackgroundTransparency = 1
+NameLabel.TextScaled = true
+NameLabel.Font = Enum.Font.SourceSansBold
+NameLabel.TextColor3 = Color3.new(1, 1, 1)
+NameLabel.TextStrokeTransparency = 0.1
+NameLabel.Parent = NameTagTemplate
+
+------------------------------------------------------
+-- GUI SETUP
+------------------------------------------------------
+
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local PlayerGui = LocalPlayer:WaitForChild("PlayerGui")
+
+-- Main ScreenGui container
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "DarkHubGUI"
+ScreenGui.Parent = PlayerGui
+
+-- Main Frame
+local MainFrame = Instance.new("Frame")
+MainFrame.Size = UDim2.new(0, 200, 0, 100)
+MainFrame.Position = UDim2.new(0.5, -100, 0.5, -50) -- Center the frame
+MainFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40) -- Dark gray background
+MainFrame.BorderSizePixel = 0
+MainFrame.Active = true -- Important for dragging
+MainFrame.Draggable = true -- Built-in Draggable property is easiest
+MainFrame.Parent = ScreenGui
+
+-- Title Label (Used as the drag handle if not using the built-in Draggable property)
+local TitleLabel = Instance.new("TextLabel")
+TitleLabel.Size = UDim2.new(1, 0, 0, 30)
+TitleLabel.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TitleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TitleLabel.Font = Enum.Font.SourceSansBold
+TitleLabel.Text = "Dark Hub"
+TitleLabel.Parent = MainFrame
+
+-- Toggle Button (renamed for clarity)
+local ToggleButton = Instance.new("TextButton")
+ToggleButton.Size = UDim2.new(0.8, 0, 0, 40)
+ToggleButton.Position = UDim2.new(0.1, 0, 0.4, 0) -- Position below the title
+ToggleButton.BackgroundColor3 = Color3.fromRGB(205, 50, 50) -- Default Red (Off)
+ToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToggleButton.Font = Enum.Font.SourceSansSemibold
+ToggleButton.Text = "Off"
+ToggleButton.Parent = MainFrame
+
+-- Store the original properties of heads we modify so we can restore them later
+local originalHeadProperties = {}
+
+-- Function to restore a character's head properties to default
+local function restoreCharacterHead(character)
+    local head = character:FindFirstChild("Head")
+    if head then
+        local originalProps = originalHeadProperties[head]
+        if originalProps then
+            head.Size = originalProps.Size
+            head.Transparency = originalProps.Transparency
+            head.BrickColor = originalProps.BrickColor
+            head.Material = originalProps.Material
+            head.CanCollide = originalProps.CanCollide
+            head.Massless = originalProps.Massless
+            -- Re-add the face decal if it was removed (standard face decal name is "face")
+            if originalProps.HasFace and not head:FindFirstChild("face") then
+                local faceDecal = Instance.new("Decal")
+                faceDecal.Name = "face"
+                faceDecal.Texture = "rbxasset://textures/face.png"
+                faceDecal.Parent = head
+            end
+            originalHeadProperties[head] = nil -- Clear from tracking table
+        end
+        -- Remove the custom nametag
+        local nameTag = head:FindFirstChild("CustomNameTag")
+        if nameTag then
+            nameTag:Destroy()
+        end
+    end
+end
+
+-- Function to update button text and color based on state
+local function updateButtonTextAndColor()
+    if _G.Disabled then 
+        ToggleButton.Text = "On"
+        ToggleButton.BackgroundColor3 = Color3.fromRGB(50, 205, 50) -- Green when active/on
+    else
+        ToggleButton.Text = "Off"
+        ToggleButton.BackgroundColor3 = Color3.fromRGB(205, 50, 50) -- Red when inactive/off
+
+        -- When turning "Off", restore all modified heads
+        -- We loop through a copy of keys because restoring modifies the original table
+        for head, _ in pairs(originalHeadProperties) do
+            if head.Parent then
+                -- Find the character model parent of the head
+                local character = head.Parent 
+                if character then
+                    restoreCharacterHead(character)
+                end
+            end
+        end
+    end
+end
+
+-- Connect the button to the toggle functionality
+ToggleButton.MouseButton1Click:Connect(function()
+    _G.Disabled = not _G.Disabled -- Toggles the state
+    updateButtonTextAndColor()
+end)
+
+-- Initial button setup
+updateButtonTextAndColor()
+
+--------------------------------------------
+    end
+})
+
+local Button = Tab:Button({
+    Title = "Highlight Esp",
+    Desc = "Made By Louie",
+    Locked = false,
+    Callback = function()
+        local esp_settings = { 
+    textsize = 8,
+    colour = 255,255,255
+}
+ 
+local gui = Instance.new("BillboardGui")
+local esp = Instance.new("TextLabel",gui)
+ 
+ 
+ 
+gui.Name = "Cracked esp";
+gui.ResetOnSpawn = false
+gui.AlwaysOnTop = true;
+gui.LightInfluence = 0;
+gui.Size = UDim2.new(1.75, 0, 1.75, 0);
+esp.BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+esp.Text = ""
+esp.Size = UDim2.new(0.0001, 0.00001, 0.0001, 0.00001);
+esp.BorderSizePixel = 4;
+esp.BorderColor3 = Color3.new(esp_settings.colour)
+esp.BorderSizePixel = 0
+esp.Font = "GothamSemibold"
+esp.TextSize = esp_settings.textsize
+esp.TextColor3 = Color3.fromRGB(esp_settings.colour) -- text colour
+ 
+game:GetService("RunService").RenderStepped:Connect(function()
+    for i,v in pairs (game:GetService("Players"):GetPlayers()) do
+        if v ~= game:GetService("Players").LocalPlayer and v.Character.Head:FindFirstChild("Cracked esp")==nil  then
+            esp.Text = "{"..v.Name.."}"
+            gui:Clone().Parent = v.Character.Head
+    end
+end
+end)
+    end
+})
+
+local Button = Tab:Button({
+    Title = "Advanced Esp(laggy on mobile)",
+    Desc = "Made By Yokai",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/cool83birdcarfly02six/UNIVERSALESPLTX/main/README.md'),true))()
+    end
+})
+
