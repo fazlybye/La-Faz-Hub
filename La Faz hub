@@ -125,13 +125,13 @@ local Button = ShooterTab:Button({
     Desc = "Keyless",
     Locked = false,
     Callback = function()
-        loadstring(game:HttpGet("https://globalexp.xyz/spawner", true))()
+        loadstring(game:HttpGet("https://globalexp.xyz/"))()
     end
 })
 
 local Button = ShooterTab:Button({
     Title = "X Hub",
-    Desc = "keyless",
+    Desc = "keyless fixing",
     Locked = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Mathersg4/MM2/refs/heads/main/Xhub", true))()
