@@ -143,7 +143,7 @@ local Button = ShooterTab:Button({
     Desc = "keyless plus works in MMV",
     Locked = false,
     Callback = function()
-        loadstring(game:HttpGet("https://yarhm.mhi.im/scr", false))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/source/yarhm/1.19/yarhm.lua"))()
     end
 })
 
