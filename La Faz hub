@@ -83,7 +83,7 @@ local Button = MainTab:Button({
     end
 })
 
-local Button = Tab:Button({
+local Button = MainTab:Button({
     Title = "Classic Soccer",
     Desc = "Made By Helixia",
     Locked = false,
