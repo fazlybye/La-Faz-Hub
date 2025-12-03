@@ -1,7 +1,7 @@
 local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
 
 local Window = WindUI:CreateWindow({
-    Title = Kaka Hub",
+    Title = "Kaka Hub",
     Icon = "dumbbell", -- lucide icon
     Author = "by Fazlyazbear",
     Folder = "Kaka hub",
