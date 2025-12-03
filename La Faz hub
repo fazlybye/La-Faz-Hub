@@ -107,7 +107,37 @@ local Button = MainTab:Button({
 })
 
 local Section = MainTab:Section({ 
-    Title = "More Soon",
+    Title = "badminton",
+})
+
+local Button = MainTab:Button({
+    Title = "Racket Rivals",
+    Desc = "Made By Karbid",
+    Locked = false,
+    Callback = function()
+        
+
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua"))()
+
+    
+    end
+})
+
+local Section = MainTab:Section({ 
+    Title = "Volleyball",
+})
+
+local Button = MainTab:Button({
+    Title = "Volleyball Legend",
+    Desc = "Made By Zeck",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/UPD-Volleyball-Legends-Zeckhubv1-44166"))()
+    end
+})
+
+local Section = MainTab:Section({ 
+    Title = "More soon",
 })
 
 local ShooterTab = Window:Tab({
@@ -131,7 +161,7 @@ local Button = ShooterTab:Button({
 
 local Button = ShooterTab:Button({
     Title = "X Hub",
-    Desc = "keyless",
+    Desc = "keyless (ui fixing)",
     Locked = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Mathersg4/MM2/refs/heads/main/Xhub", true))()
@@ -149,7 +179,7 @@ local Button = ShooterTab:Button({
 
 local Button = ShooterTab:Button({
     Title = "Capybara Hub",
-    Desc = "5 checkpoints key",
+    Desc = "2 and more options checkpoint key",
     Locked = false,
     Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/3Pvr5Pfy"))()
