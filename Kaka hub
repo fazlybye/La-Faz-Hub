@@ -1026,3 +1026,21 @@ button.MouseButton1Click:Connect(function()
 end)
     end
 })
+
+local Slider = SabTab:Slider({
+    Title = "Speed changer",
+    Desc = "idk",
+    
+    -- To make float number supported, 
+    -- make the Step a float number.
+    -- example: Step = 0.1
+    Step = 1,
+    Value = {
+        Min = 1,
+        Max = 20,
+        Default = 16,
+    },
+    Callback = function(value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (value)
+    end
+})
