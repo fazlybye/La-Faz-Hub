@@ -910,13 +910,13 @@ loadstring(game:HttpGet(string.char(
     end
 })
 
-local sabTab = Window:Tab({
-    Title = "Rip-Off San games",
+local SabTab = Window:Tab({
+    Title = "Rip-Off SAB games",
     Icon = "hat-glasses", -- optional
     Locked = false,
 })
 
-local Button = sabTab:Button({
+local Button = SabTab:Button({
     Title = "Set Tp",
     Desc = "Set it at your base collect block",
     Locked = false,
@@ -925,7 +925,7 @@ local Button = sabTab:Button({
     end
 })
 
-local Button = sabTab:Button({
+local Button = SabTab:Button({
     Title = "Invisible",
     Desc = "the other is better",
     Locked = false,
@@ -934,7 +934,7 @@ local Button = sabTab:Button({
     end
 })
 
-local Button = sabTab:Button({
+local Button = SabTab:Button({
     Title = "Invisible +Speed",
     Desc = "idk what to put",
     Locked = false,
@@ -945,7 +945,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/nhigiDcU"))()
     end
 })
 
-local Button = sabTab:Button({
+local Button = SabTab:Button({
     Title = "tp tool",
     Desc = "go invisible and to in their base",
     Locked = false,
@@ -966,7 +966,7 @@ tool.Parent = game.Players.LocalPlayer.Backpack
     end
 })
 
-local Button = sabTab:Button({
+local Button = SabTab:Button({
     Title = "Speed changer",
     Desc = "only use when game has anti tp",
     Locked = false,
