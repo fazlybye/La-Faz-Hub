@@ -154,8 +154,8 @@ local Button = ShooterTab:Button({
 
 local Button = ShooterTab:Button({
     Title = "X Hub",
-    Desc = "keyless (ui fixing)",
-    Locked = false,
+    Desc = "keyless (UI BUGGED)",
+    Locked = true,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Mathersg4/MM2/refs/heads/main/Xhub", true))()
     end
@@ -207,8 +207,8 @@ local Button = ShooterTab:Button({
 
 local Button = ShooterTab:Button({
     Title = "Hitbox",
-    Desc = "Made By Dark Hub",
-    Locked = false,
+    Desc = "Made By Dark Hub (HITBOX BUGGED)",
+    Locked = true,
     Callback = function()
         -- Global variables for the functionality
 _G.HeadSize = 15
@@ -913,7 +913,7 @@ local SabTab = Window:Tab({
 
 local Button = SabTab:Button({
     Title = "Set tp",
-    Desc = "set to at the collect block",
+    Desc = "set it at the collect block",
     Locked = false,
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/refs/heads/main/Teleport%20Gui'))()
@@ -941,31 +941,30 @@ loadstring(game:HttpGet("https://pastebin.com/raw/nhigiDcU"))()
 })
 
 local Button = SabTab:Button({
-    Title = "tp tool",
-    Desc = "to in their base",
+    Title = "Tp tool",
+    Desc = "tp in their base",
     Locked = false,
     Callback = function()
-        -- tp
- 
-mouse = game.Players.LocalPlayer:GetMouse()
+        mouse = game.Players.LocalPlayer:GetMouse()
 tool = Instance.new("Tool")
 tool.RequiresHandle = false
-tool.Name = "Equip to Click TP"
+tool.Name = "Equip to Click TP by La Faz"
 tool.Activated:connect(function()
 local pos = mouse.Hit+Vector3.new(0,2.5,0)
 pos = CFrame.new(pos.X,pos.Y,pos.Z)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
 end)
 tool.Parent = game.Players.LocalPlayer.Backpack
-   end,
     end
 })
 
 local Button = SabTab:Button({
-    Title = "Speed changer",
-    Desc = "only use when game has anti tp",
+    Title = "Set Speed",
+    Desc = "go fast",
     Locked = false,
     Callback = function()
+        
+
         -- Place this LocalScript in StarterPlayerScripts or StarterGui
 
 local player = game.Players.LocalPlayer
@@ -973,7 +972,7 @@ local playerGui = player:WaitForChild("PlayerGui")
 
 -- Create ScreenGui
 local screenGui = Instance.new("ScreenGui")
-screenGui.Name = "SpeedGui"
+screenGui.Name = "SpeedGui by La Faz"
 screenGui.Parent = playerGui
 
 -- Create Frame
@@ -1024,5 +1023,170 @@ button.MouseButton1Click:Connect(function()
         player.Character.Humanoid.WalkSpeed = speed
     end
 end)
+
+    
+    end
+})
+
+Tab:Divider()
+
+local STab = Window:Tab({
+    Title = "Setting",
+    Icon = "settings", -- optional
+    Locked = false,
+})
+
+local Slider =  STab:Slider({
+    Title = "Speed Changer",
+    Desc = "wont work if there's a anti bypass",
+    
+    -- To make float number supported, 
+    -- make the Step a float number.
+    -- example: Step = 0.1
+    Step = 1,
+    Value = {
+        Min = 1,
+        Max = 200,
+        Default = 16,
+    },
+    Callback = function(value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (value)
+    end
+})
+
+local Slider = STab:Slider({
+    Title = "Jumper power changer",
+    Desc = "wont work if there's a anti bypass",
+    
+    -- To make float number supported, 
+    -- make the Step a float number.
+    -- example: Step = 0.1
+    Step = 1,
+    Value = {
+        Min = 1,
+        Max = 200,
+        Default = 50,
+    },
+    Callback = function(value)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = (value)
+    end
+})
+
+local Button = STab:Button({
+    Title = "Inf jump PC",
+    Desc = "Ctrl and click makes you tp",
+    Locked = false,
+    Callback = function()
+        local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local INFJUMP = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+ 
+--Properties:
+ 
+ScreenGui.Parent = game.CoreGui
+ 
+main.Name = "main"
+main.Parent = ScreenGui
+main.Active = true
+main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+main.BorderSizePixel = 0
+main.Position = UDim2.new(0.119258665, 0, 0, 0)
+main.Size = UDim2.new(0, 146, 0, 28)
+main.Active = true
+main.Draggable = false
+ 
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 146, 0, 28)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "By La Faz"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 17.000
+TextLabel.TextWrapped = true
+ 
+Frame.Parent = main
+Frame.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 1, 0)
+Frame.Size = UDim2.new(0, 146, 0, 61)
+ 
+INFJUMP.Name = "INFJUMP"
+INFJUMP.Parent = main
+INFJUMP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+INFJUMP.BorderSizePixel = 0
+INFJUMP.Position = UDim2.new(0.794520497, 0, 1.6785717, 0)
+INFJUMP.Size = UDim2.new(0, 21, 0, 21)
+INFJUMP.Font = Enum.Font.SourceSans
+INFJUMP.Text = ""
+INFJUMP.TextColor3 = Color3.fromRGB(0, 0, 0)
+INFJUMP.TextSize = 14.000
+INFJUMP.MouseButton1Down:connect(function()
+local Player = game:GetService'Players'.LocalPlayer;
+local UIS = game:GetService'UserInputService';
+ 
+_G.JumpHeight = 50;
+ 
+function Action(Object, Function) if Object ~= nil then Function(Object); end end
+ 
+UIS.InputBegan:connect(function(UserInput)
+    if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.Space then
+        Action(Player.Character.Humanoid, function(self)
+            if self:GetState() == Enum.HumanoidStateType.Jumping or self:GetState() == Enum.HumanoidStateType.Freefall then
+                Action(self.Parent.HumanoidRootPart, function(self)
+                    self.Velocity = Vector3.new(0, _G.JumpHeight, 0);
+                end)
+            end
+        end)
+    end
+end)
+end)
+ 
+TextLabel_2.Parent = main
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0547945201, 0, 1.57142854, 0)
+TextLabel_2.Size = UDim2.new(0, 94, 0, 28)
+TextLabel_2.Font = Enum.Font.SciFi
+TextLabel_2.Text = "Inf jump"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 17.000
+TextLabel_2.TextWrapped = true
+ 
+-- Scripts:
+ 
+local function TKDWQ_fake_script() -- INFJUMP.LocalScript 
+local script = Instance.new('LocalScript', INFJUMP)
+ 
+function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+ 
+counter = 0
+ 
+while wait(0.1)do
+script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+ 
+counter = counter + 0.01
+end
+end
+
+
+
+local Plr = game:GetService("Players").LocalPlayer
+local Mouse = Plr:GetMouse()
+ 
+Mouse.Button1Down:connect(
+    function()
+        if not game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.LeftControl) then
+            return
+        end
+        if not Mouse.Target then
+            return
+        end
+        Plr.Character:MoveTo(Mouse.Hit.p)
+    end
+)
     end
 })
