@@ -90,6 +90,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/wrestonbest/Helixia-2
     end
 })
 
+Tab:Divider()
+
 local Section = MainTab:Section({ 
     Title = "basketball",
 })
@@ -103,6 +105,8 @@ local Button = MainTab:Button({
     end
 })
 
+Tab:Divider()
+
 local Section = MainTab:Section({ 
     Title = "badminton",
 })
@@ -115,6 +119,8 @@ local Button = MainTab:Button({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua"))()
     end
 })
+
+Tab:Divider()
 
 local Section = MainTab:Section({ 
     Title = "Volleyball",
@@ -179,6 +185,8 @@ local Button = ShooterTab:Button({
     end
 })
 
+Tab:Divider()
+
 local Section = ShooterTab:Section({ 
     Title = "Murder vs sheriff duels",
 })
@@ -191,6 +199,8 @@ local Button = ShooterTab:Button({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/THE-MIST-HUB/OFFICIAL/refs/heads/main/MVSD_FREE"))()
     end
 })
+
+Tab:Divider()
 
 local Section = ShooterTab:Section({ 
     Title = "Hitbox,Esp",
@@ -392,6 +402,33 @@ local Button = ShooterTab:Button({
     end
 })
 
+local Button =  ShooterTab:Button({
+    Title = "Aimlock",
+    Desc = "OP",
+    Locked = false,
+    Callback = function()
+        --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+_G.settings = {
+    aimStrength = 6,
+    smoothEnabled = true,
+    smoothSpeedMultiplier = 1.0,
+    wallCheck = true,
+    teamCheck = false,
+    fovRadius = 40,
+    targetPart = "HumanoidRootPart",
+    aimbotRange = 600,
+    predictPlayer = true,
+    predictionStrength = 0.1,
+    highlightsEnabled = true,
+    togglePosition = "left" 
+}
+
+loadstring(game:HttpGet("https://github.com/S1mpleXDev/5-Min-Projects/raw/refs/heads/main/Universal%20Aimbot",true))()
+    end
+})
+
 local Tab = Window:Tab({
     Title = "learning",
     Icon = "graduation-cap", -- optional
@@ -410,6 +447,8 @@ local Button = Tab:Button({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/PreppyHub/PreppyHub/refs/heads/main/SpellingBee"))()
     end
 })
+
+Tab:Divider()
 
 local Section = Tab:Section({ 
     Title = "Math Murder",
@@ -778,6 +817,8 @@ end)
     end
 })
 
+Tab:Divider()
+
 local Section = Tab:Section({ 
     Title = "Mindsweeper",
 })
@@ -1028,7 +1069,7 @@ end)
     end
 })
 
-Tab:Divider()
+Window:Divider()
 
 local STab = Window:Tab({
     Title = "Setting",
