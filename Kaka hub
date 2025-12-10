@@ -90,7 +90,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/wrestonbest/Helixia-2
     end
 })
 
-Tab:Divider()
+MainTab:Divider()
 
 local Section = MainTab:Section({ 
     Title = "basketball",
@@ -105,7 +105,7 @@ local Button = MainTab:Button({
     end
 })
 
-Tab:Divider()
+MainTab:Divider()
 
 local Section = MainTab:Section({ 
     Title = "badminton",
@@ -120,7 +120,7 @@ local Button = MainTab:Button({
     end
 })
 
-Tab:Divider()
+MainTab:Divider()
 
 local Section = MainTab:Section({ 
     Title = "Volleyball",
@@ -185,7 +185,7 @@ local Button = ShooterTab:Button({
     end
 })
 
-Tab:Divider()
+ShooterTab:Divider()
 
 local Section = ShooterTab:Section({ 
     Title = "Murder vs sheriff duels",
@@ -200,7 +200,7 @@ local Button = ShooterTab:Button({
     end
 })
 
-Tab:Divider()
+ShooterTab:Divider()
 
 local Section = ShooterTab:Section({ 
     Title = "Hitbox,Esp",
