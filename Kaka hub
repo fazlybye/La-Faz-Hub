@@ -54,27 +54,45 @@ local Section = MainTab:Section({
 })
 
 local Button = MainTab:Button({
-    Title = "Pure Soccer",
-    Desc = "Made By Nexveil",
+    Title = "Touchline",
+    Desc = "deadass game ngl",
     Locked = false,
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ryte-e/Scripts/refs/heads/main/PureSoccer/PureSoccerexp"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fx2024ondiscord/test/refs/heads/main/linkvertise-script-api.1.0.8/linkvertise-script-api/assets/touchline.lua"))()
     end
 })
 
 local Button = MainTab:Button({
-    Title = "TRS BETA",
+    Title = "Pure Soccer",
     Desc = "Made By Nexveil",
     Locked = false,
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ryte-e/Scripts/refs/heads/main/Trs/BETA"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/xv9Hooks/exp/refs/heads/main/pureSoccer"))()
+    end
+})
+
+local Button = MainTab:Button({
+    Title = "Touch Football",
+    Desc = "never tried it",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/coderxtx9si/ZYN-SCRIPT-HUB/refs/heads/main/ZYNNISBACK"))()
+    end
+})
+
+local Button = MainTab:Button({
+    Title = "TRS",
+    Desc = "Made By Nexveil",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/xv9Hooks/exp/refs/heads/main/TrsPubs"))()
     end
 })
 
 local Button = MainTab:Button({
     Title = "MPS Futsal",
     Desc = "Made By Nexveil",
-    Locked = false,
+    Locked = true,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ryte-e/Scripts/refs/heads/main/Mps/Futsal"))()
     end
@@ -102,6 +120,51 @@ local Button = MainTab:Button({
     Locked = false,
     Callback = function()
         loadstring(game:HttpGet("https://pastefy.app/DLjkqIll/raw"))()
+    end
+})
+
+local Button = MainTab:Button({
+    Title = "RH2",
+    Desc = "",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/coderxtx9si/ZYN-SCRIPT-HUB/refs/heads/main/ZYNNISBACK"))()
+    end
+})
+
+local Button = MainTab:Button({
+    Title = "Hoop nation",
+    Desc = "",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/coderxtx9si/ZYN-SCRIPT-HUB/refs/heads/main/ZYNNISBACK"))()
+    end
+})
+
+local Button = MainTab:Button({
+    Title = "arcade basketball",
+    Desc = "op ngl",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/coderxtx9si/ZYN-SCRIPT-HUB/refs/heads/main/ZYNNISBACK"))()
+    end
+})
+
+local Button = MainTab:Button({
+    Title = "playground basketball",
+    Desc = "",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/coderxtx9si/ZYN-SCRIPT-HUB/refs/heads/main/ZYNNISBACK"))()
+    end
+})
+
+local Button = MainTab:Button({
+    Title = "elite basketball",
+    Desc = "mid",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/coderxtx9si/ZYN-SCRIPT-HUB/refs/heads/main/ZYNNISBACK"))()
     end
 })
 
@@ -135,8 +198,37 @@ local Button = MainTab:Button({
     end
 })
 
+MainTab:Divider()
+
 local Section = MainTab:Section({ 
-    Title = "More soon",
+    Title = "American football",
+})
+
+local Button = MainTab:Button({
+    Title = "Football legends",
+    Desc = "op ngl",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/coderxtx9si/ZYN-SCRIPT-HUB/refs/heads/main/ZYNNISBACK"))()
+    end
+})
+
+local Button = MainTab:Button({
+    Title = "FF2",
+    Desc = "not tested",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/coderxtx9si/ZYN-SCRIPT-HUB/refs/heads/main/ZYNNISBACK"))()
+    end
+})
+
+local Button = MainTab:Button({
+    Title = "College Football",
+    Desc = "not tested",
+    Locked = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/coderxtx9si/ZYN-SCRIPT-HUB/refs/heads/main/ZYNNISBACK"))()
+    end
 })
 
 local ShooterTab = Window:Tab({
@@ -405,7 +497,7 @@ local Button = ShooterTab:Button({
 local Button =  ShooterTab:Button({
     Title = "Aimlock",
     Desc = "OP",
-    Locked = false,
+    Locked = true,
     Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/j1DCpbN1"))()
     end
